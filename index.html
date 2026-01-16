@@ -19,34 +19,21 @@
       background: #111;
       color: #fff;
       padding: 50px 20px;
-    }
-    .hero {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 30px;
-    }
-    .hero-text {
-      flex: 1;
-      min-width: 260px;
-    }
-    .hero-text h1 {
-      margin-top: 0;
-      font-size: 36px;
-    }
-    .hero-text p {
-      font-size: 18px;
-    }
-    .hero-img {
-      flex: 0 0 280px;
       text-align: center;
     }
-    .hero-img img {
+    .hero img {
+      max-width: 300px;
       width: 100%;
-      max-width: 280px;
       border-radius: 12px;
+      margin-bottom: 30px;
+    }
+    .hero h1 {
+      margin: 0 0 15px;
+      font-size: 36px;
+    }
+    .hero p {
+      font-size: 18px;
+      margin: 10px 0;
     }
 
     .cta-btn {
@@ -76,7 +63,7 @@
       margin-top: 0;
     }
 
-    /* TRAINER */
+    /* TRAINER DETAIL */
     .trainer {
       display: flex;
       flex-wrap: wrap;
@@ -92,11 +79,12 @@
       flex: 1;
     }
 
+    /* TESTIMONIALS */
     .testimonials {
       background: #f9f9f9;
     }
 
-    /* CTA BOX */
+    /* CALL TO ACTION BOX */
     .call-box {
       background: #111;
       color: #fff;
@@ -114,6 +102,13 @@
       font-size: 14px;
       color: #666;
     }
+
+    /* Responsive adjustments */
+    @media (min-width: 700px) {
+      .trainer {
+        flex-wrap: nowrap;
+      }
+    }
   </style>
 </head>
 
@@ -122,26 +117,16 @@
   <!-- HERO / ABOVE THE FOLD -->
   <header>
     <div class="hero">
+      <img src="https://raw.githubusercontent.com/kimmerandcasper/revolutionarygym/refs/heads/main/mike.PNG" 
+           alt="Mike - Head Coach at Revolution Training System">
 
-      <div class="hero-text">
-        <h1>Revolution Training System</h1>
-        <p><strong>Family-Owned Strength & Performance Gym in Tempe, AZ</strong></p>
-        <p>
-          Personal training and small group coaching built on real athletic
-          experience — not fitness fads. Train with purpose. Get real results.
-        </p>
+      <h1>Revolution Training System</h1>
+      <p><strong>Family-Owned Strength & Performance Gym in Tempe, AZ</strong></p>
+      <p>Personal training and small group coaching built on real athletic experience — not fitness fads. Train with purpose. Get real results.</p>
 
-        <a href="tel:+16025793608" class="cta-btn">
-          Call Now: (602) 579-3608
-        </a>
-      </div>
-
-      <div class="hero-img">
-        <img
-          src="https://raw.githubusercontent.com/kimmerandcasper/revolutionarygym/refs/heads/main/mike.PNG"
-          alt="Mike - Head Coach at Revolution Training System">
-      </div>
-
+      <a href="tel:+16025793608" class="cta-btn">
+        Call Now: (602) 579-3608
+      </a>
     </div>
   </header>
 
@@ -151,8 +136,7 @@
     <section>
       <h2>Train With Purpose. Get Real Results.</h2>
       <p>
-        Revolution Training System is a Tempe-based gym focused on intelligent
-        programming, personal coaching, and long-term athletic development.
+        Revolution Training System is a Tempe-based gym focused on intelligent programming, personal coaching, and long-term athletic development.
         We help people of all levels build strength, confidence, and resilience.
       </p>
       <ul>
@@ -167,32 +151,20 @@
     <!-- TRAINER DETAIL (IMAGE USED AGAIN) -->
     <section>
       <h2>Meet Your Coach: Mike</h2>
-
       <div class="trainer">
-        <img
-          src="https://raw.githubusercontent.com/kimmerandcasper/revolutionarygym/refs/heads/main/mike.PNG"
-          alt="Mike coaching at Revolution Training System">
-
+        <img src="https://raw.githubusercontent.com/kimmerandcasper/revolutionarygym/refs/heads/main/mike.PNG" 
+             alt="Mike coaching at Revolution Training System">
         <div class="trainer-text">
           <p>
-            Michael was a top collegiate baseball athlete at
-            <strong>Iowa Western</strong> and <strong>Temple University</strong>,
-            followed by several years playing professional baseball at the
-            <strong>Double-A level</strong>.
+            Michael was a top collegiate baseball athlete at <strong>Iowa Western</strong> and <strong>Temple University</strong>,
+            followed by several years playing professional baseball at the <strong>Double-A level</strong>.
           </p>
-
           <p>
-            His real-world experience in athletics, strength training, and
-            conditioning allows him to understand exactly what it takes to go
-            to the next level — and how to help others do the same.
+            His real-world experience in athletics, strength training, and conditioning allows him to understand exactly what it takes to go to the next level — and how to help others do the same.
           </p>
-
           <p>
-            Mike is tireless in his pursuit of knowledge, constantly studying
-            training, nutrition, and proper movement to provide the highest
-            level of coaching possible.
+            Mike is tireless in his pursuit of knowledge, constantly studying training, nutrition, and proper movement to provide the highest level of coaching possible.
           </p>
-
           <p>
             <strong>Credentials & Achievements:</strong><br>
             • Elite Powerlifter — <strong>1829 total at 217 lbs</strong><br>
@@ -215,14 +187,11 @@
     <section>
       <h2>Visit Us</h2>
       <p><strong>Address:</strong><br>
-        606 W Southern Ave #2<br>
-        Tempe, AZ 85282
+         606 W Southern Ave #2<br>
+         Tempe, AZ 85282
       </p>
       <p><strong>Phone:</strong> (602) 579-3608</p>
-      <p>
-        Conveniently located in Tempe with structured training programs and open
-        gym access for all experience levels.
-      </p>
+      <p>Conveniently located in Tempe with structured training programs and open gym access for all experience levels.</p>
     </section>
 
   </div>
